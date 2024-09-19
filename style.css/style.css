@@ -1,0 +1,157 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000; /* Fondo negro */
+    color: #00FFFF; /* Color turquesa para el texto principal */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #1C1C1C; /* Negro más claro */
+    color: #00FFFF; /* Turquesa */
+}
+
+.profile-photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 3px solid #C148DD; /* Violeta claro */
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #C148DD; /* Violeta claro */
+}
+
+p {
+    font-size: 1.2em;
+}
+
+/* Secciones */
+section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    color: #00FFFF; /* Turquesa */
+    border-bottom: 2px solid #5B2D65; /* Violeta oscuro */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+/* Experiencia y Educación */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+    background-color: #1C1C1C; /* Fondo oscuro para cada elemento */
+    padding: 20px;
+    border-radius: 8px;
+    color: #00FF9D; /* Verde neón */
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #C148DD; /* Violeta claro */
+}
+
+/* Proyectos */
+.projects-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background-color: #1C1C1C; /* Fondo oscuro */
+    color: #00FFFF; /* Turquesa */
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+    background-color: #333; /* Más claro al pasar el ratón */
+}
+
+.project-card a {
+    color: #FF007F; /* Magenta neón */
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+/* Botón de WhatsApp */
+.whatsapp-button {
+    background-color: #25D366; /* Verde WhatsApp */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E; /* Verde más oscuro */
+}
+
+/* Modo responsive */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .whatsapp-button {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+/* Animaciones sutiles */
+body {
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
